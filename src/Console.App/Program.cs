@@ -8,7 +8,7 @@ using Util.Entidades.Vendas.Repositorio;
 using Util.Entidades.Vendas;
 using System;
 
-namespace Console.App
+namespace ConsoleApp
 {
     class Program
     {
