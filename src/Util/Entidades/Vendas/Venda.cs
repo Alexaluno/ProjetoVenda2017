@@ -8,6 +8,16 @@ namespace Util.Entidades.Vendas
 {
     public class Venda : EntidadeBase
     {
+        public Venda(string pedido, Usuario usuario, Cliente cliente, List<Produto> produtos, decimal valorTotal, int quantidadeTotal)
+        {
+            Pedido = pedido;
+            Usuario = usuario;
+            Cliente = cliente;
+            Produtos = produtos;
+            ValorTotal = valorTotal;
+            QuantidadeTotal = quantidadeTotal;
+        }
+
         public string Pedido { get; set; }
 
         public Usuario Usuario { get; set; }

@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Util.Entidades.Clientes.Repositorio
 {
-    public static class ClienteRepositorio
+    public  class ClienteRepositorio
     {
-        public static List<Cliente> Clientes { get; set; }
+        public ClienteRepositorio()
+        {
+            Clientes = new List<Cliente>();
+        }
+
+        public  List<Cliente> Clientes { get; set; }
     }
 }

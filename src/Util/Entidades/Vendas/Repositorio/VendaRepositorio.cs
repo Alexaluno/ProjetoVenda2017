@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Util.Entidades.Vendas.Repositorio
 {
-    public static class VendaRepositorio
+    public  class VendaRepositorio
     {
-        public static List<Venda>  Vendas { get; set; }
+        public VendaRepositorio()
+        {
+            Vendas = new List<Venda>();
+        }
+
+        public  List<Venda>  Vendas { get; set; }
     }
 
     

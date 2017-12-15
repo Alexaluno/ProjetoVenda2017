@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Util.Entidades.Usuarios.Repositorio
 {
-    public static class UsuarioRepositorio
+    public class UsuarioRepositorio
     {
-        public static List<Usuario> Usuarios { get; set; }
+        public UsuarioRepositorio()
+        {
+            Usuarios = new List<Usuario>();
+        }
+
+        public List<Usuario> Usuarios { get; set; }
     }
 }

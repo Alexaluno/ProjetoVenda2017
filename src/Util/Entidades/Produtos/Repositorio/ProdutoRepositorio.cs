@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Util.Entidades.Produtos.Repositorio
 {
-    public static  class ProdutoRepositorio
+    public class ProdutoRepositorio
     {
-        public static List<Produto> Produtos { get; set; }
+        public ProdutoRepositorio()
+        {
+            Produtos = new List<Produto>();
+        }
+
+        public  List<Produto> Produtos { get; set; }
     }
 }
