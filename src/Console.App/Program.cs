@@ -72,8 +72,12 @@ namespace ConsoleApp
                 foreach (var client in retornoClienteRepositorio)
                 {
                     var venda = new Venda("001", user, client, retornoProdutoRepositorio, 200, 20);
-                    Console.WriteLine("Num.Ped: " + venda.Pedido + " | " + "Usuario: " + venda.Usuario.Nome + " | " + "Cliente: " + venda.Cliente.Nome + " | " + "Produto(s): " + venda.Produtos + " | " + "Valor Total: R$" + venda.ValorTotal + " | " + "Quantidade Total: " + venda.QuantidadeTotal);
-                    Console.WriteLine();
+                    foreach (var prod in retornoProdutoRepositorio)
+                    {
+                        Console.WriteLine("Num.Ped: " + venda.Pedido + " | " + "Usuario: " + venda.Usuario.Nome + " | " + "Cliente: " + venda.Cliente.Nome + " | " + "Produto(s): " + prod.Descricao + " | " + "Valor Total: R$" + venda.ValorTotal + " | " + "Quantidade Total: " + venda.QuantidadeTotal);
+                        Console.WriteLine();
+                    }
+                    
                 }
             }
             Console.ReadLine();
