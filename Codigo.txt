@@ -1,21 +1,4 @@
-﻿using Util.Entidades.Clientes.Repositorio;
-using Util.Entidades.Clientes;
-using Util.Entidades.Produtos.Repositorio;
-using Util.Entidades.Produtos;
-using Util.Entidades.Usuarios;
-using Util.Entidades.Usuarios.Repositorio;
-using Util.Entidades.Vendas.Repositorio;
-using Util.Entidades.Vendas;
-using System;
-using System.Collections.Generic;
-
-namespace ConsoleApp
-{
-    class Program
-    {
-        public static void Main()
-        {
-            //Codigo Usuario
+//Codigo Usuario
             var usuario1 = new Usuario("Rodrigo", true);
             var usuario2 = new Usuario("Alex", false);
             var usuarioRepositorio = new UsuarioRepositorio();
@@ -84,8 +67,10 @@ namespace ConsoleApp
                         Console.WriteLine("Num.Ped: " + venda.Pedido + " | " + "Usuario: " + venda.Usuario.Nome + " | " + "Cliente: " + venda.Cliente.Nome + " | " + "Produto(s): " + prod.Descricao + " | " + "Valor Total: R$" + venda.ValorTotal + " | " + "Quantidade Total: " + venda.QuantidadeTotal);
                         Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
                     }
+
                 }
-            }Console.ReadLine();
-        }
+            }
+         Console.ReadLine();
+	}
     }
 }
